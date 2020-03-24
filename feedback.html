@@ -1,0 +1,154 @@
+<head>
+	<title>
+		feedback
+	</title>
+	<script  src="jquery-3.4.1.min.js"></script>
+ </script>
+ <script >
+		function feedback(){
+			window.alert("Thanks for your valuable feedback");
+		};
+		$('document').ready(function(){
+
+
+		 $("#r1").click(function(){
+		 	  $('#r1').css("background-color","gold");
+               $('#r2').css("background-color","white");
+                $('#r3').css("background-color","white");
+                $("#r4").css("background-color","white");
+                $("#r5").css("background-color","white");
+		 });
+    
+		  $("#r2").click(function(){
+		 	  $('#r2').css("background-color","gold");
+		 	   $('#r1').css("background-color","white");
+		 	   $('#r3').css("background-color","white");
+                $("#r4").css("background-color","white");
+                $("#r5").css("background-color","white");
+		
+		      });
+		$("#r3").click(function(){
+		 	  $('#r2').css("background-color","white");
+		 	   $('#r1').css("background-color","white");
+		 	    $('#r3').css("background-color","gold");
+		 	     $("#r4").css("background-color","white");
+                $("#r5").css("background-color","white");
+           });
+			$("#r4").click(function(){
+		 	  $('#r2').css("background-color","white");
+		 	   $('#r1').css("background-color","white");
+		 	    $('#r4').css("background-color","gold");
+		 	     $("#r3").css("background-color","white");
+                $("#r5").css("background-color","white");
+           });
+				$("#r5").click(function(){
+		 	  $('#r2').css("background-color","white");
+		 	   $('#r1').css("background-color","white");
+		 	    $('#r5').css("background-color","gold");
+		 	     $("#r4").css("background-color","white");
+                $("#r3").css("background-color","white");
+           });
+         });
+        
+		 
+	</script>
+	<style type="text/css">
+		body{
+			background-image: linear-gradient(to right,lightgrey,aqua,powderblue);
+		}
+		button{
+			    width:100px;
+			    height: 50px;
+		}
+		#r1{
+			float:left;
+			width:50px;
+			height:50px;
+            
+            border:1px dotted ;
+            border-radius: 50%;
+		}
+		#r2{
+			float:left;
+			width:50px;
+			height:50px;
+          
+            border:2px dotted ;
+            border-radius: 50%;
+		
+		}
+		#r3{
+			float:left;
+			width:50px;
+			height:50px;
+            left:150px;
+            border:3px dotted ;
+            border-radius: 50%;
+		}
+		#r4{
+			float:left;
+			width:50px;
+			height:50px;
+         
+            border:4px dotted ;
+            border-radius: 50%;
+		}
+		#r5{ 
+			float:left;
+			width:50px;
+			height:50px;
+            
+            border:5px dotted ;
+            border-radius: 50%;
+		}
+		#mov{
+              padding:20px;
+             height: 100px;
+             width: 150px;
+            margin-right: 50px
+              left:10px;
+		}
+
+	</style>
+</head>
+<body>
+	 <center>
+	 	<h1><b>Your feedback is valuable</b></h1>
+	 	<br>
+	 	<table border="1"> 
+	 		<tr>
+	 			<td><textarea  rows="20" cols="100" ></textarea>
+	 			</td>
+	 		</tr>
+	 	</table>
+	 	<BR>
+	 	<div>
+
+	 	</div>
+	 	<br>
+	 	
+	 	<center><b><h1>Rate me</b></h1></center>
+	 	<center> 
+	 		<div id="mov">
+	 	<div id="r1">
+	 		<center><p><b>1</b></p></center>
+	 		</div>
+	 		<div id="r2">
+	 			<center><p><b>2</b></p></center>
+	 		</div>
+	 		<div id="r3">
+	 			<center><p><b>3</b></p></center>
+	 		</div>
+	 		<div id="r4">
+	 		<center><p><b>4</b></p></center>
+	 		</div>
+	 		<div id="r5">
+	 			<center><p><b>5</b></p></center>
+	 		</div>
+	 	</div>
+	 	</center>
+	 	<br>
+	 <a href="register.html"><button style="background-color:  #ff9999;"  onclick="feedback();" ><b><h3 style="text-align: center;">Submit</h1></b></button></a>
+	 	
+	 </center>
+</body>
